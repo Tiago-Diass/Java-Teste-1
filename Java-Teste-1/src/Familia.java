@@ -45,4 +45,11 @@ public class Familia {
     public String getInfoEncEducacao(){
         return this.encarregadoEducacao + this.parentescoEncEducacao;
     }
+
+    public String getInfoFamilia(){
+        String mensagem = "Encarregado de Educacao: " + this.encarregadoEducacao +
+                          "Parentesco do Encarregado de Educacao: " + this.parentescoEncEducacao +
+                          "Aluno: " + this.aluno;
+        return mensagem;
+    }
 }

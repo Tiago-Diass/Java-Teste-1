@@ -76,4 +76,8 @@ public class Pessoa {
         String mensagem = this.nomeProprio + " " + this.nomeApelido;
         return mensagem;
     }
+
+    public int getIdade() {
+        return (currentYear - this.anoNascimento);
+    }
 }

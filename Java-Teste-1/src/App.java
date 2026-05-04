@@ -11,5 +11,9 @@ public class App {
         System.out.println("Idade da pessoa 2: " + pessoa2.getIdade());
         System.out.println("\nInformacao do Encarregado de Educacao: \n" + familia1.getInfoEncEducacao());
         System.out.println("\nInformacao toda do Encarregado de Educacao: " + familia1.getInfoFamilia());
+        System.out.println("\n\n\n");
+        System.out.println(pessoa1.toString());
+        System.out.println(pessoa2.toString());
+        System.out.println(familia1.toString());
     }
 }

@@ -2,6 +2,8 @@ import java.util.Calendar;
 
 public class Pessoa {
     int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+    int currentMonth = Calendar.getInstance().get(Calendar.MONTH);
+    int currentDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
     private int numeroCC;
     private String nomeProprio;
     private String nomeApelido;
@@ -78,6 +80,10 @@ public class Pessoa {
     }
 
     public int getIdade() {
-        return (currentYear - this.anoNascimento);
+        int idade = currentYear - this.anoNascimento;
+        if (currentMonth < this.mesNascimento || (currentMonth == this.mesNascimento && currentDay < this.diaNascimento)) {
+            idade--;
+        }
+        return idade;
     }
 }
